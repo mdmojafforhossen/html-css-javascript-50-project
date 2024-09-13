@@ -1,0 +1,26 @@
+.slideshow-element i, h2{
+    font-size: 8rem;
+    border-bottom: 0 !important;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:rgb(189, 104, 39);
+}
+.slideshow-elements{
+
+}
+.slideshow-element{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 0.6s;
+}
+.slideshow-element.current{
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.6s;
+}
